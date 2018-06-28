@@ -9,3 +9,7 @@ bane = "BANE"
 
 boonicon[0] = 0
 boonicons = 0
+
+dragged = false
+ix = 0
+iy = 0

@@ -34,7 +34,7 @@
             "Key": "07a194e2-9846-41ca-b647-6800f2ab8c47",
             "Value": {
                 "id": "62f6730c-47d0-4473-a9c7-e9440fc1f0e0",
-                "resourcePath": "objects\\obj_randomizeButton\\obj_randomizeButton.yy",
+                "resourcePath": "objects\\obj_deck\\obj_deck.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -111,14 +111,6 @@
             }
         },
         {
-            "Key": "4840b2af-1f7d-4bfc-9185-d329bb97633d",
-            "Value": {
-                "id": "078759c9-c137-4c9c-808d-f495b07c779a",
-                "resourcePath": "scripts\\drawMelee\\drawMelee.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "4acf633d-238e-43e8-a473-f85d2948b81c",
             "Value": {
                 "id": "e73d341a-109a-4cad-bc72-02a83d783bae",
@@ -148,6 +140,14 @@
                 "id": "39f92bdb-c626-45d8-b8cb-ab1ff819e527",
                 "resourcePath": "views\\512d5a61-bb4a-4f67-a42e-fedff4b3384c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "69236335-2b54-447f-a095-69daba0ed89c",
+            "Value": {
+                "id": "921a46a0-9585-4a8c-8264-7ffeaa3e6cce",
+                "resourcePath": "scripts\\defineRangedCard\\defineRangedCard.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "f1b97f37-5ddc-4c61-ba69-9314efc14327",
+            "Value": {
+                "id": "607efe40-29ed-428e-bfeb-ead0a4723cc1",
+                "resourcePath": "scripts\\createRangedDeck\\createRangedDeck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "76ce85b8-eaa2-4e3e-a416-84ec948f38b3",
@@ -376,10 +384,11 @@
         }
     ],
     "script_order": [
-        "4840b2af-1f7d-4bfc-9185-d329bb97633d",
         "9b82b262-3534-46ff-863d-e436ffe07dbe",
+        "f1b97f37-5ddc-4c61-ba69-9314efc14327",
         "bcb740ae-f586-44fb-946a-6958c0e7f8c5",
         "321575f0-8447-4aa6-99cf-8a334d3be0ad",
+        "69236335-2b54-447f-a095-69daba0ed89c",
         "e9a89c3a-529a-4742-a027-0d557fff20cb",
         "0fc473e0-94af-4974-8167-7634c987d96e",
         "a79bf390-d12f-4db0-b5b4-c0eb329cd247"

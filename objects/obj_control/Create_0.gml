@@ -3,9 +3,23 @@
 
 randomize()
 createMeleeDeck()
-
+createRangedDeck()
 createBoonDeck()
 
+inst = instance_create_depth(100,100,0,obj_deck)
+inst.deck = 0
+
+inst = instance_create_depth(100,150,0,obj_deck)
+inst.deck = 2
+
+inst = instance_create_depth(100,200,0,obj_deck)
+inst.deck = 3
+
+inst = instance_create_depth(100,250,0,obj_deck)
+inst.deck = 1
+
+
+global.control = id
 
 enum weapon 
 {

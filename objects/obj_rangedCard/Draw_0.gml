@@ -24,7 +24,7 @@ draw_text(x+121,y+74,boon)
 
 for(i = 0; i < attackicons; i++)
 {
-	draw_sprite(spr_weaponIcons,attackicon[i],x+10,y+10+(i*40))
+	draw_sprite(spr_rangedIcons,attackicon[i],x+10,y+10+(i*40))
 }
 
 draw_set_color(c_yellow)

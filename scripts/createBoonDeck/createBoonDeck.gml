@@ -2,7 +2,7 @@ boonDeck = ds_list_create()
 
 for(i = 0; i < 50; i++)
 {
-	boonArray[i] = instance_create_depth(0,0,0,obj_boonCard)
+	boonArray[i] = instance_create_depth(-1000,-1000,0,obj_boonCard)
 	ds_list_add(boonDeck,boonArray[i])
 	ii = boonArray[i]
 	

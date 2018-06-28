@@ -32,3 +32,7 @@ damageEffects[2] = 0
 damageEffect[0] = "Wound"
 damageEffect[1] = "Wound"
 damageEffect[2] = "Wound"
+
+dragged = false
+ix = 0
+iy = 0

@@ -3,7 +3,7 @@ meleeDeck = ds_list_create()
 #region //Attack Icons
 for(i = 0; i < 75; i++)
 {
-	meleeArray[i] = instance_create_depth(0,0,0,obj_meleeCard)
+	meleeArray[i] = instance_create_depth(-1000,-1000,0,obj_meleeCard)
 	ds_list_add(meleeDeck,meleeArray[i])
 	ii = meleeArray[i]
 	
@@ -12,7 +12,7 @@ for(i = 0; i < 75; i++)
 	{
 		ii.attackicon[ii.attackicons] = 0
 		ii.attackicons ++
-		ii.attackicon[ii.attackicons] = 3+ceil((i)/8)
+		ii.attackicon[ii.attackicons] = 3+ceil((i+1)/8)
 		ii.attackicons ++
 	}
 	else if i < 55
@@ -110,17 +110,17 @@ defineMeleeCard(32, "Target can see you", "MISS", "Minor Distraction", "BANE", 2
 defineMeleeCard(19, "Target aware of you", "MISS", "Bold", "BOON", 3, 0)
 defineMeleeCard(19, "Target Major Concealed", "MISS", "Focused", "BOON", 3, 1)
 defineMeleeCard(14, "Can see target", "HIT", "Focused", "BOON", 3, 1)
-defineMeleeCard(20, "Can see target", "HIT", "Shoulder Wounded", "BANE", 3, 1)
+defineMeleeCard(20, "Can see target", "HIT", "Arm Wounded", "BANE", 3, 1)
 #endregion
 
 #region //21-30 Universal
 defineMeleeCard(13, "Can see target", "HIT", "Bold", "BOON", 3, 1)
 defineMeleeCard(13, "Nauseus", "MISS and BANE", " ", " ", 3, 1)
 defineMeleeCard(12, "Dizzy", "MISS", "Target has Adept Coordination", "BANE", 3, 1)
-defineMeleeCard(11, "Dizzy", "MISS", "Shoulder Wounded", "BANE", 3, 1)
+defineMeleeCard(11, "Dizzy", "MISS", "Arm Wounded", "BANE", 3, 1)
 defineMeleeCard(11, "Hand Wounded", "MISS", "Target Minor Concealed", "BANE", 2, 0)
 defineMeleeCard(11, "Arm Wounded", "MISS", "Bold", "BOON", 2, 0)
-defineMeleeCard(10, "Shoulder Wounded", "MISS", "Minor Distraction", "BANE", 2, 0)
+defineMeleeCard(10, "Arm Wounded", "MISS", "Minor Distraction", "BANE", 2, 0)
 defineMeleeCard(10, "Minor Distraction", "MISS", "Novice Coordination", "BOON", 3, 1)
 defineMeleeCard(8, "Major Distraction", "MISS", "Bold", "BOON", 3, 1)
 defineMeleeCard(6, "Major Distraction", "MISS", "Bold", "BOON", 3, 1)
@@ -150,11 +150,11 @@ defineMeleeCard(15, "Height Advantage", "HIT", "Stessed", "BANE", 2, 0)
 defineMeleeCard(11, "Height Advantage", "HIT", "Attacking with Offhand", "BANE", 2, 0)
 defineMeleeCard(10, "Attacking with Main Hand", "HIT", "Height Advantage", "BOON", 3, 0)
 defineMeleeCard(26, "Attacking with Main Hand", "HIT", "Stressed", "BANE", 2, 0)
-defineMeleeCard(0, "Grappling", "MISS", "Attack Obstructed", "BANE", 2, 1) //Large
-defineMeleeCard(6, "Grappling", "MISS", "Attack Obstructed", "BANE", 2, 1)
-defineMeleeCard(5, "Grappling", "MISS", "Attack Obstructed", "BANE", 2, 1)
-defineMeleeCard(23, "Attack Obstructed", "MISS", "Stressed", "BANE", 2, 1)
-defineMeleeCard(22, "Attack Obstructed", "MISS", "Stressed", "BANE", 2, 1)
+defineMeleeCard(0, "Grappling", "MISS", "Weapon Obstructed", "BANE", 2, 1) //Large
+defineMeleeCard(6, "Grappling", "MISS", "Weapon Obstructed", "BANE", 3, 1)
+defineMeleeCard(5, "Grappling", "MISS", "Weapon Obstructed", "BANE", 1, 1)
+defineMeleeCard(23, "Weapon Obstructed", "MISS", "Stressed", "BANE", 3, 1)
+defineMeleeCard(22, "Weapon Obstructed", "MISS", "Stressed", "BANE", 2, 1)
 #endregion
 
 #region //56-75 Weapon Specials
@@ -173,7 +173,7 @@ defineMeleeCard(0, "Focused", "HIT", "Steady Footing", "BOON", 3, 0) //Spear
 defineMeleeCard(30, "Can see target", "HIT", "Dizzy", "BANE", 2, 1) 
 defineMeleeCard(18, "Can see target", "HIT", "Steady Footing", "BOON", 3, 1)
 defineMeleeCard(26, "Steady Footing", "HIT", "Target Minor Concealed", "BANE", 2, 1)
-defineMeleeCard(4, "Bold", "HIT", "Shoulder wounded", "BANE", 2, 0) //Swrd+Axe
+defineMeleeCard(4, "Bold", "HIT", "Arm wounded", "BANE", 2, 0) //Swrd+Axe
 defineMeleeCard(1, "Focused", "HIT", "Bold", "BOON", 2, 0) //Spear+Swrd
 defineMeleeCard(25, "Bloodthirsty", "HIT", "First attack this phase", "BOON", 3, 0) //Hammer+Axe
 defineMeleeCard(10, "Spend 1 fatigue", "HIT", "Bold", "BOON", 0, 0) //Mace+Axe
@@ -269,7 +269,3 @@ defineDamage(4,14,9,21,16,28)
 arm = armour.stone
 defineDamage(4,14,9,21,16,28)
 #endregion 
-
-ds_list_shuffle(meleeDeck)
-
-instance_create_depth(x,y,-5,obj_randomizeButton)
