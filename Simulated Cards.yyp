@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "a2f8169f-9e01-485d-9caa-9a8043497d5f",
+            "Value": {
+                "id": "f3a47f3c-af6c-4961-8045-619f01ab7ff2",
+                "resourcePath": "scripts\\defineRangedDamage\\defineRangedDamage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a48ee90a-daf7-46d3-8840-3ef63186ef82",
             "Value": {
                 "id": "3a4ccac7-dc9d-448c-8e00-cdfc0b89b36f",
@@ -391,6 +399,7 @@
         "69236335-2b54-447f-a095-69daba0ed89c",
         "e9a89c3a-529a-4742-a027-0d557fff20cb",
         "0fc473e0-94af-4974-8167-7634c987d96e",
+        "a2f8169f-9e01-485d-9caa-9a8043497d5f",
         "a79bf390-d12f-4db0-b5b4-c0eb329cd247"
     ],
     "tutorial": ""

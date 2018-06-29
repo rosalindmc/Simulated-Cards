@@ -102,7 +102,7 @@ defineMeleeCard(17, "Target is armed", "MISS", "Arm Wounded", "BANE", 3, 0)
 
 #region //11-20 Universal
 defineMeleeCard(16, "Target is armed", "MISS", "Don't have Good Grip", "BANE", 0, 0)
-defineMeleeCard(16, "Steady Footing", "HIT", "DIZZY", "BANE", 2, 1)
+defineMeleeCard(16, "Steady Footing", "HIT", "Dizzy", "BANE", 2, 1)
 defineMeleeCard(18, "Steady Footing", "HIT", "First attack this phase", "BOON", 3, 1)
 defineMeleeCard(18, "First attack this phase", "HIT", "Attacking with Offhand", "BANE", 2, 0)
 defineMeleeCard(18, "First attack this phase", "HIT", "Don't have Good Grip", "BANE", 2, 0)
@@ -127,7 +127,7 @@ defineMeleeCard(6, "Major Distraction", "MISS", "Bold", "BOON", 3, 1)
 #endregion
 
 #region //31-40 Universal
-defineMeleeCard(5, "Major Distraction", "MISS", "", "BANE", 3, 1)
+defineMeleeCard(5, "Major Distraction", "MISS and BANE", "", "", 3, 1)
 defineMeleeCard(28, "Major Distraction", "MISS and BANE", " ", " ", 2, 1)
 defineMeleeCard(27, "Target has Minor Distraction", "HIT", "Target has Minor Distraction", "BOON", 2, 0)
 defineMeleeCard(26, "Target has Major Distraction", "HIT", "First attack this phase", "BOON", 2, 0)

@@ -31,7 +31,13 @@ enum weapon
 	axe = 5,
 	hammer = 6,
 	mace = 7,
-	spear = 8
+	spear = 8,
+	rending = 1,
+	ap = 2,
+	flame = 3,
+	frost = 4,
+	corrosion = 5,
+	lightning = 6
 }
 
 enum armour 
