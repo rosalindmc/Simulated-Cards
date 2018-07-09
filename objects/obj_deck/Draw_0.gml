@@ -22,4 +22,8 @@ switch(deck)
 	draw_text(x+38,y+12,"Ranged")
 	draw_text(x+88,y+12,ds_list_size(global.control.rangeDeck)-cardsDrawn)
 	break
+	case 3:
+	draw_text(x+38,y+12,"Distance")
+	draw_text(x+88,y+12,ds_list_size(global.control.distanceDeck)-cardsDrawn)
+	break
 }

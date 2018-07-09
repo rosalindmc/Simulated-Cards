@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "2a68e855-d74b-4002-b088-0024b3c90de9",
+            "Value": {
+                "id": "77fd2526-0f98-4a42-8ec3-5269488641c3",
+                "resourcePath": "objects\\obj_distanceCard\\obj_distanceCard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2e12d221-53a1-46fa-b789-f98d0571b983",
             "Value": {
                 "id": "c1e890ad-23f3-4e89-b034-df2530a59645",
@@ -83,6 +91,14 @@
             "Value": {
                 "id": "7f2fec86-7e2c-4f31-ae27-ad802217a591",
                 "resourcePath": "scripts\\defineMeleeCard\\defineMeleeCard.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3e3221ec-2175-45d2-ab3a-8b2a795befa8",
+            "Value": {
+                "id": "d90f01e5-c6b4-4cd9-a198-606a463eb5e7",
+                "resourcePath": "scripts\\defineDistance\\defineDistance.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -375,6 +391,14 @@
             }
         },
         {
+            "Key": "f392675b-b5a7-4614-8316-0fbaddac5328",
+            "Value": {
+                "id": "b0980137-2d66-468b-a487-d055d94787c9",
+                "resourcePath": "scripts\\createDistanceDeck\\createDistanceDeck.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "76ce85b8-eaa2-4e3e-a416-84ec948f38b3",
@@ -394,13 +418,15 @@
     "script_order": [
         "9b82b262-3534-46ff-863d-e436ffe07dbe",
         "f1b97f37-5ddc-4c61-ba69-9314efc14327",
+        "f392675b-b5a7-4614-8316-0fbaddac5328",
         "bcb740ae-f586-44fb-946a-6958c0e7f8c5",
         "321575f0-8447-4aa6-99cf-8a334d3be0ad",
         "69236335-2b54-447f-a095-69daba0ed89c",
         "e9a89c3a-529a-4742-a027-0d557fff20cb",
         "0fc473e0-94af-4974-8167-7634c987d96e",
         "a2f8169f-9e01-485d-9caa-9a8043497d5f",
-        "a79bf390-d12f-4db0-b5b4-c0eb329cd247"
+        "a79bf390-d12f-4db0-b5b4-c0eb329cd247",
+        "3e3221ec-2175-45d2-ab3a-8b2a795befa8"
     ],
     "tutorial": ""
 }

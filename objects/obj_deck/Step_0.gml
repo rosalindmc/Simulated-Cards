@@ -18,6 +18,9 @@ if point_in_rectangle(mouse_x,mouse_y,x,y,x+100,y+25)
 			case 2:
 			i = ds_list_find_value(global.control.rangeDeck,cardsDrawn)
 			break
+			case 3:
+			i = ds_list_find_value(global.control.distanceDeck,cardsDrawn)
+			break
 		}
 		i.x = x
 		i.y = y
@@ -43,6 +46,10 @@ if point_in_rectangle(mouse_x,mouse_y,x,y,x+100,y+25)
 			case 2:
 			ds_list_shuffle(global.control.rangeDeck)
 			with(obj_rangedCard){x=-1000}
+			break
+			case 3:
+			ds_list_shuffle(global.control.distanceDeck)
+			with(obj_distanceCard){x=-1000}
 			break
 		}		
 		cardsDrawn = 0

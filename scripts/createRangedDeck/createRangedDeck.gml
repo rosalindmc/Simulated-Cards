@@ -110,3 +110,93 @@ defineRangedDamage(4,14,9,21,16,28)
 arm = armour.stone
 defineRangedDamage(6,16,12,24,22,30)
 #endregion 
+
+#region //Piercing Damage
+dmg = weapon.ap
+arm = armour.meat
+defineRangedDamage(2,12,4,16,5,22)
+arm = armour.bone
+defineRangedDamage(3,15,4,20,6,26)
+arm = armour.cloth
+defineRangedDamage(3,16,6,22,10,30)
+arm = armour.mail
+defineRangedDamage(2,14,4,17,5,24)
+arm = armour.plate
+defineRangedDamage(3,20,7,25,12,30)
+arm = armour.wood
+defineRangedDamage(4,16,10,22,18,30)
+arm = armour.stone
+defineRangedDamage(5,18,10,24,18,30)
+#endregion 
+
+#region //Fire Damage
+dmg = weapon.flame
+arm = armour.meat
+defineRangedDamage(2,9,5,16,11,23)
+arm = armour.bone
+defineRangedDamage(3,12,7,19,14,26)
+arm = armour.cloth
+defineRangedDamage(1,7,4,14,9,21)
+arm = armour.mail
+defineRangedDamage(3,13,8,20,15,27)
+arm = armour.plate
+defineRangedDamage(4,14,9,21,16,28)
+arm = armour.wood
+defineRangedDamage(1,7,4,14,9,21)
+arm = armour.stone
+defineRangedDamage(5,15,10,22,18,30)
+#endregion 
+
+#region //Cold Damage
+dmg = weapon.frost
+arm = armour.meat
+defineRangedDamage(1,6,4,13,8,20)
+arm = armour.bone
+defineRangedDamage(3,13,8,20,15,27)
+arm = armour.cloth
+defineRangedDamage(4,14,9,21,16,28)
+arm = armour.mail
+defineRangedDamage(3,11,6,18,13,25)
+arm = armour.plate
+defineRangedDamage(2,13,6,20,12,28)
+arm = armour.wood
+defineRangedDamage(3,12,7,19,14,26)
+arm = armour.stone
+defineRangedDamage(4,14,9,21,16,28)
+#endregion 
+
+#region //Lightning Damage
+dmg = weapon.lightning
+arm = armour.meat
+defineRangedDamage(2,10,6,17,12,24)
+arm = armour.bone
+defineRangedDamage(4,14,9,21,16,28)
+arm = armour.cloth
+defineRangedDamage(3,12,7,19,14,26)
+arm = armour.mail
+defineRangedDamage(1,11,5,18,11,25)
+arm = armour.plate
+defineRangedDamage(2,9,5,16,11,23)
+arm = armour.wood
+defineRangedDamage(3,12,7,19,14,26)
+arm = armour.stone
+defineRangedDamage(6,16,12,24,22,30)
+#endregion 
+
+#region //Corrosion Damage
+dmg = weapon.corrosion
+arm = armour.meat
+defineRangedDamage(2,7,5,16,13,23)
+arm = armour.bone
+defineRangedDamage(3,9,6,18,15,25)
+arm = armour.cloth
+defineRangedDamage(4,12,9,21,18,28)
+arm = armour.mail
+defineRangedDamage(1,8,4,17,12,24)
+arm = armour.plate
+defineRangedDamage(2,11,6,20,14,28)
+arm = armour.wood
+defineRangedDamage(3,9,6,18,15,25)
+arm = armour.stone
+defineRangedDamage(3,11,8,20,17,27)
+#endregion 

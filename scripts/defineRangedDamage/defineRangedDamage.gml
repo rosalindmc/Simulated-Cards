@@ -13,6 +13,12 @@ d[4] = argument4
 d[5] = argument5
 
 iii = 0
+iv = 5
+
+if dmg <= 2
+{
+	iv = 12	
+}
 
 with(obj_rangedCard)
 {
@@ -29,9 +35,9 @@ with(obj_rangedCard)
 	
 	if check = true
 	{
-		damage[other.arm,0] = floor(other.d[0]+((other.d[1]-other.d[0])*(other.iii/12)))
-		damage[other.arm,1] = floor(other.d[2]+((other.d[3]-other.d[2])*(other.iii/12)))
-		damage[other.arm,2] = floor(other.d[4]+((other.d[5]-other.d[4])*(other.iii/12)))
+		damage[other.arm,0] = floor(other.d[0]+((other.d[1]-other.d[0])*(other.iii/other.iv)))
+		damage[other.arm,1] = floor(other.d[2]+((other.d[3]-other.d[2])*(other.iii/other.iv)))
+		damage[other.arm,2] = floor(other.d[4]+((other.d[5]-other.d[4])*(other.iii/other.iv)))
 		other.iii ++
 	}
 }
