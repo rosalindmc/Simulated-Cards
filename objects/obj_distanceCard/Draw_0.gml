@@ -14,7 +14,7 @@ for(i = 0; i <= 4; i++)
 	draw_text(x+121-35,y+12+(i*70),range[i])
 	draw_set_font(fnt_normal)
 	draw_text(x+121-36,y+37+(i*70),string(minRange[i,0])+"m - "+string(maxRange[i,0])+"m")
-	draw_set_color(c_red)
+	draw_set_color(c_yellow)
 	draw_text(x+242-36,y+37+(i*70),damageDrop[i])
 }
 

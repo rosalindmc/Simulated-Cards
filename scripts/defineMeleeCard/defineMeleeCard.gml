@@ -6,11 +6,12 @@
 /// @param stamcost
 /// @param whom
 
+
 #region //Location
 switch(argument0)
 {
 	#region //Head
-	case 0:
+	case hit.skull:
 	meleeArray[crd].hitlocation = "Skull"
 	meleeArray[crd].locationtype = 1
 	
@@ -27,7 +28,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[5] = "Brain Destroyed"
 	meleeArray[crd].damageEffect[6] = "Skull Destroyed"
 	break
-	case 1:
+	case hit.face:
 	meleeArray[crd].hitlocation = "Face* +1"
 	
 	meleeArray[crd].damageEffects[0] = 3
@@ -43,7 +44,7 @@ switch(argument0)
 	meleeArray[crd].damageEffects[2] = 1
 	meleeArray[crd].damageEffect[6] = "Skull Destroyed"
 	break
-	case 2:
+	case hit.eyes:
 	meleeArray[crd].hitlocation = "Eyes* +2"
 	
 	meleeArray[crd].damageEffects[0] = 3 
@@ -59,7 +60,7 @@ switch(argument0)
 	meleeArray[crd].damageEffects[2] = 1	
 	meleeArray[crd].damageEffect[6] = "Brain Destroyed"
 	break
-	case 3:
+	case hit.jaw:
 	meleeArray[crd].hitlocation = "Jaw* +1"
 	meleeArray[crd].locationtype = 1
 	
@@ -77,7 +78,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Pain 3+1d5/3"
 	meleeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 4:
+	case hit.neck:
 	meleeArray[crd].hitlocation = "Neck +2"
 	meleeArray[crd].locationtype = 8
 		
@@ -94,7 +95,7 @@ switch(argument0)
 	break
 	#endregion
 	#region //Rr Arm
-	case 5:
+	case hit.rshldr:
 	meleeArray[crd].hitlocation = "Rr Shoulder +1"
 	meleeArray[crd].locationtype = 1
 	
@@ -112,7 +113,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Disabled"
 	meleeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 6:
+	case hit.ruprarm:
 	meleeArray[crd].hitlocation = "Rr Upper Arm +1"
 	
 	meleeArray[crd].damageEffects[0] = 3
@@ -129,7 +130,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Lost"
 	meleeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 7:
+	case hit.relbow:
 	meleeArray[crd].hitlocation = "Rr Elbow +2"
 	meleeArray[crd].locationtype = 1
 	
@@ -147,7 +148,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Lost"
 	meleeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 8:
+	case hit.rforarm:
 	meleeArray[crd].hitlocation = "Rr Forearm +1"
 	
 	meleeArray[crd].damageEffects[0] = 3
@@ -164,7 +165,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Lost"
 	meleeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 9:
+	case hit.rhand:
 	meleeArray[crd].hitlocation = "Rr Hand +2"
 	meleeArray[crd].locationtype = 1
 	
@@ -184,7 +185,7 @@ switch(argument0)
 	break
 	#endregion
 	#region //Ld Arm
-	case 10:
+	case hit.lshldr:
 	meleeArray[crd].hitlocation = "Ld Shoulder +1"
 	meleeArray[crd].locationtype = 1
 	
@@ -202,7 +203,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Disabled"
 	meleeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 11:
+	case hit.luprarm:
 	meleeArray[crd].hitlocation = "Ld Upper Arm +1"
 	
 	meleeArray[crd].damageEffects[0] = 3
@@ -219,7 +220,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Lost"
 	meleeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 12:
+	case hit.lelbow:
 	meleeArray[crd].hitlocation = "Ld Elbow +2"
 	meleeArray[crd].locationtype = 1
 
@@ -237,7 +238,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Lost"
 	meleeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 13:
+	case hit.lforarm:
 	meleeArray[crd].hitlocation = "Ld Forearm +1"
 	
 	meleeArray[crd].damageEffects[0] = 3
@@ -254,7 +255,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Arm Lost"
 	meleeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 14:
+	case hit.lhand:
 	meleeArray[crd].hitlocation = "Ld Hand +2"
 	meleeArray[crd].locationtype = 1
 	
@@ -274,7 +275,7 @@ switch(argument0)
 	break
 	#endregion 
 	#region //Body
-	case 15:
+	case hit.cchest:
 	meleeArray[crd].hitlocation = "Cn Chest*"
 	meleeArray[crd].locationtype = 1
 	
@@ -292,7 +293,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Asphyxia"
 	meleeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 16:
+	case hit.rchest:
 	meleeArray[crd].hitlocation = "Rr Chest"
 	meleeArray[crd].locationtype = 1
 	
@@ -310,7 +311,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Lung Destroyed"
 	meleeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 17:
+	case hit.lchest:
 	meleeArray[crd].hitlocation = "Ld Chest"
 	meleeArray[crd].locationtype = 1
 	
@@ -328,7 +329,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Lung Destroyed"
 	meleeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 18:
+	case hit.abdomen:
 	meleeArray[crd].hitlocation = "Abdomen +1"
 	
 	meleeArray[crd].damageEffects[0] = 3
@@ -346,7 +347,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[7] = "Intest. Destroyed"
 	meleeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 19:
+	case hit.groin:
 	meleeArray[crd].hitlocation = "Groin"
 	
 	meleeArray[crd].damageEffects[0] = 1
@@ -365,7 +366,7 @@ switch(argument0)
 	break
 	#endregion
 	#region //Rr Leg
-	case 20:
+	case hit.rhip:
 	meleeArray[crd].hitlocation = "Rr Hip"
 	meleeArray[crd].locationtype = 1
 	
@@ -384,7 +385,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[7] = "Leg Disabled"
 	meleeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 21:
+	case hit.rthigh:
 	meleeArray[crd].hitlocation = "Rr Thigh"
 	
 	meleeArray[crd].damageEffects[0] = 3
@@ -401,7 +402,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	meleeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 22:
+	case hit.rknee:
 	meleeArray[crd].hitlocation = "Rr Knee +2"
 	meleeArray[crd].locationtype = 8
 	
@@ -420,7 +421,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[7] = "Leg Lost"
 	meleeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 23:
+	case hit.rshin:
 	meleeArray[crd].hitlocation = "Rr Shin +1"
 	meleeArray[crd].locationtype = 8
 	
@@ -438,7 +439,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	meleeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 24:
+	case hit.rfoot:
 	meleeArray[crd].hitlocation = "Rr Foot +2"
 	meleeArray[crd].locationtype = 1
 	
@@ -459,7 +460,7 @@ switch(argument0)
 	break
 	#endregion
 	#region //Ld Leg
-	case 25:
+	case hit.lhip:
 	meleeArray[crd].hitlocation = "Ld Hip"
 	meleeArray[crd].locationtype = 1
 		
@@ -478,7 +479,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[7] = "Leg Disabled"
 	meleeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 26:
+	case hit.lthigh:
 	meleeArray[crd].hitlocation = "Ld Thigh"
 
 	meleeArray[crd].damageEffects[0] = 3
@@ -495,7 +496,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	meleeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 27:
+	case hit.lknee:
 	meleeArray[crd].hitlocation = "Ld Knee +2"
 	meleeArray[crd].locationtype = 8
 	
@@ -514,7 +515,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[7] = "Leg Lost"
 	meleeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 28:
+	case hit.lshin:
 	meleeArray[crd].hitlocation = "Ld Shin +1"
 	meleeArray[crd].locationtype = 8
 	
@@ -532,7 +533,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	meleeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 29:
+	case hit.lfoot:
 	meleeArray[crd].hitlocation = "Ld Foot +2"
 	meleeArray[crd].locationtype = 1
 	
@@ -552,7 +553,7 @@ switch(argument0)
 	break
 	#endregion
 	#region //Misc
-	case 30:
+	case hit.lvitals:
 	meleeArray[crd].hitlocation = "Ld Chest"
 	
 	meleeArray[crd].damageEffects[0] = 2
@@ -569,8 +570,8 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Heart Destroyed"
 	meleeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 31:
-	meleeArray[crd].hitlocation = "Ld Chest"
+	case hit.rvitals:
+	meleeArray[crd].hitlocation = "Rr Chest"
 	
 	meleeArray[crd].damageEffects[0] = 2
 	meleeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -586,7 +587,7 @@ switch(argument0)
 	meleeArray[crd].damageEffect[6] = "Liver Destroyed"
 	meleeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 32:
+	case hit.stomach:
 	meleeArray[crd].hitlocation = "Abdomen*"
 	meleeArray[crd].locationtype = 1
 		

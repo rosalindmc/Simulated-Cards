@@ -41,6 +41,44 @@ enum weapon
 	lightning = 6
 }
 
+enum hit 
+{
+	skull = 0,
+	face = 1,
+	eyes = 2,
+	jaw = 3,
+	neck = 4,
+	rshldr = 5,
+	ruprarm = 6,
+	relbow = 7,
+	rforarm = 8,
+	rhand = 9,
+	lshldr = 10,
+	luprarm = 11,
+	lelbow = 12,
+	lforarm = 13,
+	lhand = 14,
+	cchest = 15,
+	rchest = 16,
+	lchest = 17,
+	abdomen = 18,
+	groin = 19,
+	rhip = 20,
+	rthigh = 21,
+	rknee = 22,
+	rshin = 23,
+	rfoot = 25,
+	lhip = 26,
+	lthigh = 27,
+	lknee = 28,
+	lshin = 29,
+	lfoot = 30,
+	rvitals = 31,
+	lvitals = 32,
+	stomach = 33
+}
+
+
 enum armour 
 {
 	meat = 0,

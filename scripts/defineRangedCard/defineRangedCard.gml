@@ -6,11 +6,12 @@
 /// @param stamcost
 /// @param whom
 
+
 #region //Location
 switch(argument0)
 {
 	#region //Head
-	case 0:
+	case hit.skull:
 	rangeArray[crd].hitlocation = "Skull"
 	rangeArray[crd].locationtype = 1
 	
@@ -27,7 +28,7 @@ switch(argument0)
 	rangeArray[crd].damageEffect[5] = "Brain Destroyed"
 	rangeArray[crd].damageEffect[6] = "Skull Destroyed"
 	break
-	case 1:
+	case hit.face:
 	rangeArray[crd].hitlocation = "Face* +1"
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -43,7 +44,7 @@ switch(argument0)
 	rangeArray[crd].damageEffects[2] = 1
 	rangeArray[crd].damageEffect[6] = "Skull Destroyed"
 	break
-	case 2:
+	case hit.eyes:
 	rangeArray[crd].hitlocation = "Eyes* +2"
 	
 	rangeArray[crd].damageEffects[0] = 3 
@@ -59,7 +60,7 @@ switch(argument0)
 	rangeArray[crd].damageEffects[2] = 1	
 	rangeArray[crd].damageEffect[6] = "Brain Destroyed"
 	break
-	case 3:
+	case hit.jaw:
 	rangeArray[crd].hitlocation = "Jaw* +1"
 	rangeArray[crd].locationtype = 1
 	
@@ -77,7 +78,7 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Pain 3+1d5/3"
 	rangeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 4:
+	case hit.neck:
 	rangeArray[crd].hitlocation = "Neck +2"
 	rangeArray[crd].locationtype = 8
 		
@@ -94,8 +95,8 @@ switch(argument0)
 	break
 	#endregion
 	#region //Rr Arm
-	case 5:
-	rangeArray[crd].hitlocation = "Rr Shoulder +1"
+	case hit.rshldr:
+	rangeArray[crd].hitlocation = "Rgt Shoulder +1"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 2
@@ -112,8 +113,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Disabled"
 	rangeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 6:
-	rangeArray[crd].hitlocation = "Rr Upper Arm +1"
+	case hit.ruprarm:
+	rangeArray[crd].hitlocation = "Rgt Upper Arm +1"
 	
 	rangeArray[crd].damageEffects[0] = 3
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -129,8 +130,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Lost"
 	rangeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 7:
-	rangeArray[crd].hitlocation = "Rr Elbow +2"
+	case hit.relbow:
+	rangeArray[crd].hitlocation = "Rgt Elbow +2"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -147,8 +148,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Lost"
 	rangeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 8:
-	rangeArray[crd].hitlocation = "Rr Forearm +1"
+	case hit.rforarm:
+	rangeArray[crd].hitlocation = "Rgt Forearm +1"
 	
 	rangeArray[crd].damageEffects[0] = 3
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -164,8 +165,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Lost"
 	rangeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 9:
-	rangeArray[crd].hitlocation = "Rr Hand +2"
+	case hit.rhand:
+	rangeArray[crd].hitlocation = "Rgt Hand +2"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -184,8 +185,8 @@ switch(argument0)
 	break
 	#endregion
 	#region //Ld Arm
-	case 10:
-	rangeArray[crd].hitlocation = "Ld Shoulder +1"
+	case hit.lshldr:
+	rangeArray[crd].hitlocation = "Lft Shoulder +1"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 2
@@ -202,8 +203,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Disabled"
 	rangeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 11:
-	rangeArray[crd].hitlocation = "Ld Upper Arm +1"
+	case hit.luprarm:
+	rangeArray[crd].hitlocation = "Lft Upper Arm +1"
 	
 	rangeArray[crd].damageEffects[0] = 3
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -219,8 +220,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Lost"
 	rangeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 12:
-	rangeArray[crd].hitlocation = "Ld Elbow +2"
+	case hit.lelbow:
+	rangeArray[crd].hitlocation = "Lft Elbow +2"
 	rangeArray[crd].locationtype = 1
 
 	rangeArray[crd].damageEffects[0] = 3
@@ -237,8 +238,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Lost"
 	rangeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 13:
-	rangeArray[crd].hitlocation = "Ld Forearm +1"
+	case hit.lforarm:
+	rangeArray[crd].hitlocation = "Lft Forearm +1"
 	
 	rangeArray[crd].damageEffects[0] = 3
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -254,8 +255,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Arm Lost"
 	rangeArray[crd].damageEffect[7] = "Major Bleed"
 	break
-	case 14:
-	rangeArray[crd].hitlocation = "Ld Hand +2"
+	case hit.lhand:
+	rangeArray[crd].hitlocation = "Lft Hand +2"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -274,7 +275,7 @@ switch(argument0)
 	break
 	#endregion 
 	#region //Body
-	case 15:
+	case hit.cchest:
 	rangeArray[crd].hitlocation = "Cn Chest*"
 	rangeArray[crd].locationtype = 1
 	
@@ -292,8 +293,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Asphyxia"
 	rangeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 16:
-	rangeArray[crd].hitlocation = "Rr Chest"
+	case hit.rchest:
+	rangeArray[crd].hitlocation = "Rgt Chest"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 2
@@ -310,8 +311,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Lung Destroyed"
 	rangeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 17:
-	rangeArray[crd].hitlocation = "Ld Chest"
+	case hit.lchest:
+	rangeArray[crd].hitlocation = "Lft Chest"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 2
@@ -328,7 +329,7 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Lung Destroyed"
 	rangeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 18:
+	case hit.abdomen:
 	rangeArray[crd].hitlocation = "Abdomen +1"
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -346,7 +347,7 @@ switch(argument0)
 	rangeArray[crd].damageEffect[7] = "Intest. Destroyed"
 	rangeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 19:
+	case hit.groin:
 	rangeArray[crd].hitlocation = "Groin"
 	
 	rangeArray[crd].damageEffects[0] = 1
@@ -365,8 +366,8 @@ switch(argument0)
 	break
 	#endregion
 	#region //Rr Leg
-	case 20:
-	rangeArray[crd].hitlocation = "Rr Hip"
+	case hit.rhip:
+	rangeArray[crd].hitlocation = "Rgt Hip"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -384,8 +385,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[7] = "Leg Disabled"
 	rangeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 21:
-	rangeArray[crd].hitlocation = "Rr Thigh"
+	case hit.rthigh:
+	rangeArray[crd].hitlocation = "Rgt Thigh"
 	
 	rangeArray[crd].damageEffects[0] = 3
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -401,8 +402,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	rangeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 22:
-	rangeArray[crd].hitlocation = "Rr Knee +2"
+	case hit.rknee:
+	rangeArray[crd].hitlocation = "Rgt Knee +2"
 	rangeArray[crd].locationtype = 8
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -420,8 +421,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[7] = "Leg Lost"
 	rangeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 23:
-	rangeArray[crd].hitlocation = "Rr Shin +1"
+	case hit.rshin:
+	rangeArray[crd].hitlocation = "Rgt Shin +1"
 	rangeArray[crd].locationtype = 8
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -438,8 +439,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	rangeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 24:
-	rangeArray[crd].hitlocation = "Rr Foot +2"
+	case hit.rfoot:
+	rangeArray[crd].hitlocation = "Rgt Foot +2"
 	rangeArray[crd].locationtype = 1
 	
 		
@@ -459,8 +460,8 @@ switch(argument0)
 	break
 	#endregion
 	#region //Ld Leg
-	case 25:
-	rangeArray[crd].hitlocation = "Ld Hip"
+	case hit.lhip:
+	rangeArray[crd].hitlocation = "Lft Hip"
 	rangeArray[crd].locationtype = 1
 		
 	rangeArray[crd].damageEffects[0] = 3
@@ -478,8 +479,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[7] = "Leg Disabled"
 	rangeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 26:
-	rangeArray[crd].hitlocation = "Ld Thigh"
+	case hit.lthigh:
+	rangeArray[crd].hitlocation = "Lft Thigh"
 
 	rangeArray[crd].damageEffects[0] = 3
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -495,8 +496,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	rangeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 27:
-	rangeArray[crd].hitlocation = "Ld Knee +2"
+	case hit.lknee:
+	rangeArray[crd].hitlocation = "Lft Knee +2"
 	rangeArray[crd].locationtype = 8
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -514,8 +515,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[7] = "Leg Lost"
 	rangeArray[crd].damageEffect[8] = "Severe Bleed"
 	break
-	case 28:
-	rangeArray[crd].hitlocation = "Ld Shin +1"
+	case hit.lshin:
+	rangeArray[crd].hitlocation = "Lft Shin +1"
 	rangeArray[crd].locationtype = 8
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -532,8 +533,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Pain 1+1d5/2"
 	rangeArray[crd].damageEffect[7] = "Leg Lost"
 	break
-	case 29:
-	rangeArray[crd].hitlocation = "Ld Foot +2"
+	case hit.lfoot:
+	rangeArray[crd].hitlocation = "Lft Foot +2"
 	rangeArray[crd].locationtype = 1
 	
 	rangeArray[crd].damageEffects[0] = 3
@@ -552,8 +553,8 @@ switch(argument0)
 	break
 	#endregion
 	#region //Misc
-	case 30:
-	rangeArray[crd].hitlocation = "Ld Chest"
+	case hit.lvitals:
+	rangeArray[crd].hitlocation = "Lft Chest"
 	
 	rangeArray[crd].damageEffects[0] = 2
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -569,8 +570,8 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Heart Destroyed"
 	rangeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 31:
-	rangeArray[crd].hitlocation = "Ld Chest"
+	case hit.rvitals:
+	rangeArray[crd].hitlocation = "Rgt Chest"
 	
 	rangeArray[crd].damageEffects[0] = 2
 	rangeArray[crd].damageEffect[0] = "Pain 1/1"
@@ -586,7 +587,7 @@ switch(argument0)
 	rangeArray[crd].damageEffect[6] = "Liver Destroyed"
 	rangeArray[crd].damageEffect[7] = "Severe Bleed"
 	break
-	case 32:
+	case hit.stomach:
 	rangeArray[crd].hitlocation = "Abdomen*"
 	rangeArray[crd].locationtype = 1
 		
