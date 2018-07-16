@@ -24,6 +24,9 @@ if point_in_rectangle(mouse_x,mouse_y,x,y,x+100,y+25)
 			case 4:
 			i = ds_list_find_value(global.control.panicDeck,cardsDrawn)
 			break
+			case 5:
+			i = ds_list_find_value(global.control.misfireDeck,cardsDrawn)
+			break
 		}
 		i.x = x
 		i.y = y
@@ -56,7 +59,11 @@ if point_in_rectangle(mouse_x,mouse_y,x,y,x+100,y+25)
 			break
 			case 4:
 			ds_list_shuffle(global.control.panicDeck)
-			with(obj_distanceCard){x=-1000}
+			with(obj_panicCard){x=-1000}
+			break
+			case 5:
+			ds_list_shuffle(global.control.misfireDeck)
+			with(obj_misfireCard){x=-1000}
 			break
 		}		
 		cardsDrawn = 0

@@ -30,4 +30,8 @@ switch(deck)
 	draw_text(x+38,y+12,"Panic")
 	draw_text(x+88,y+12,ds_list_size(global.control.panicDeck)-cardsDrawn)
 	break
+	case 5:
+	draw_text(x+38,y+12,"Misfire")
+	draw_text(x+88,y+12,ds_list_size(global.control.misfireDeck)-cardsDrawn)
+	break
 }
