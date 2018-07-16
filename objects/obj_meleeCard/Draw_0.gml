@@ -44,7 +44,15 @@ for(ii = 0; ii <= 6; ii++)
 			case 1: draw_set_color(c_orange) break
 			case 2: draw_set_color(c_red) break
 		}
-		draw_text(x+180-10+(i*25),y+112+(ii*40),damage[ii,i])
+		
+		if damage[ii,i] = 99
+		{
+			draw_text(x+180-10+(i*25),y+112+(ii*40),"-")
+		}
+		else
+		{
+			draw_text(x+180-10+(i*25),y+112+(ii*40),damage[ii,i])
+		}
 	}
 }
 

@@ -46,6 +46,5 @@ crd = 0
 //Very Long Unaimed
 defineDistance(1,1,4,0,10,1,"+1")
 defineDistance(2,10,4,0,15,1,"-")
-defineDistance(3,25,4,0,5,1,"-1")
-defineDistance(3,30,4,0,5,1,"-1")
+defineDistance(3,25,4,0,10,1,"-1")
 defineDistance(4,35,4,0,5,1,"-2")

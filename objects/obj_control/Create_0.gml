@@ -6,6 +6,7 @@ createMeleeDeck()
 createRangedDeck()
 createDistanceDeck()
 createBoonDeck()
+createPanicDeck()
 
 inst = instance_create_depth(100,100,0,obj_deck)
 inst.deck = 0
@@ -18,6 +19,9 @@ inst.deck = 3
 
 inst = instance_create_depth(100,250,0,obj_deck)
 inst.deck = 1
+
+inst = instance_create_depth(100,300,0,obj_deck)
+inst.deck = 4
 
 
 global.control = id

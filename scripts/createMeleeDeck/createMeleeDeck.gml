@@ -88,184 +88,184 @@ for(i = 0; i < 75; i++)
 crd = 0
 
 #region //1-10 Universal
-defineMeleeCard(0, "Novice Melee", "HIT", "Attacking with Offhand", "BANE", 0, 0)
-defineMeleeCard(0, "Expert Melee", "HIT", "Don't have Steady Footing", "BANE", 0, 0)
-defineMeleeCard(1, "Target has Novice Athletics", "MISS", "Target has Minor Distraction", "BOON", 2, 0)
-defineMeleeCard(3, "Target has Expert Athletics", "MISS", "Shaken", "BANE", 2, 0)
-defineMeleeCard(15, "Target has Adept Melee", "MISS", "Hand Wounded", "BANE", 3, 0)
-defineMeleeCard(15, "Target has Master Melee", "MISS", "Shaken", "BANE", 3, 1)
-defineMeleeCard(17, "Attacking with Main Hand", "HIT", "Bloodthirsty", "BANE", 3, 0)
-defineMeleeCard(17, "Shaken", "MISS", "Hand Wounded", "BANE", 2, 1)
-defineMeleeCard(17, "Good Grip on Weapon", "HIT", "Arm Wounded", "BANE", 3, 1)
-defineMeleeCard(17, "Target is armed", "MISS", "Arm Wounded", "BANE", 3, 0)
+defineMeleeCard(hit.skull, "Novice Melee", "HIT", "Attacking with Offhand", "BANE", 0, 0)
+defineMeleeCard(hit.skull, "Expert Melee", "HIT", "Don't have Steady Footing", "BANE", 0, 0)
+defineMeleeCard(hit.face, "Target has Novice Athletics", "MISS", "Target has Minor Distraction", "BOON", 2, 0)
+defineMeleeCard(hit.jaw, "Target has Expert Athletics", "MISS", "Shaken", "BANE", 2, 0)
+defineMeleeCard(hit.face, "Target has Adept Melee", "MISS", "Hand Wounded", "BANE", 3, 0)
+defineMeleeCard(hit.cchest, "Target has Master Melee", "MISS", "Shaken", "BANE", 3, 1)
+defineMeleeCard(hit.cchest, "Attacking with Main Hand", "HIT", "Bloodthirsty", "BANE", 3, 0)
+defineMeleeCard(hit.rhip, "Shaken", "MISS", "Hand Wounded", "BANE", 2, 1)
+defineMeleeCard(hit.lchest, "Good Grip on Weapon", "HIT", "Arm Wounded", "BANE", 3, 1)
+defineMeleeCard(hit.lchest, "Target is armed", "MISS", "Arm Wounded", "BANE", 3, 0)
 #endregion
 
 #region //11-20 Universal
-defineMeleeCard(16, "Target is armed", "MISS", "Don't have Good Grip", "BANE", 0, 0)
-defineMeleeCard(16, "Steady Footing", "HIT", "Dizzy", "BANE", 2, 1)
-defineMeleeCard(18, "Steady Footing", "HIT", "First attack this phase", "BOON", 3, 1)
-defineMeleeCard(18, "First attack this phase", "HIT", "Attacking with Offhand", "BANE", 2, 0)
-defineMeleeCard(18, "First attack this phase", "HIT", "Don't have Good Grip", "BANE", 2, 0)
-defineMeleeCard(32, "Target can see you", "MISS", "Minor Distraction", "BANE", 2, 0)
-defineMeleeCard(19, "Target aware of you", "MISS", "Bold", "BOON", 3, 0)
-defineMeleeCard(19, "Target Major Concealed", "MISS", "Focused", "BOON", 3, 1)
-defineMeleeCard(14, "Can see target", "HIT", "Focused", "BOON", 3, 1)
-defineMeleeCard(20, "Can see target", "HIT", "Arm Wounded", "BANE", 3, 1)
+defineMeleeCard(hit.lchest, "Target is armed", "MISS", "Don't have Good Grip", "BANE", 0, 0)
+defineMeleeCard(hit.rchest, "Steady Footing", "HIT", "Dizzy", "BANE", 2, 1)
+defineMeleeCard(hit.rchest, "Steady Footing", "HIT", "First attack this phase", "BOON", 3, 1)
+defineMeleeCard(hit.abdomen, "First attack this phase", "HIT", "Attacking with Offhand", "BANE", 2, 0)
+defineMeleeCard(hit.abdomen, "First attack this phase", "HIT", "Don't have Good Grip", "BANE", 2, 0)
+defineMeleeCard(hit.stomach, "Target can see you", "MISS", "Minor Distraction", "BANE", 2, 0)
+defineMeleeCard(hit.stomach, "Target aware of you", "MISS", "Bold", "BOON", 3, 0)
+defineMeleeCard(hit.groin, "Target Major Concealed", "MISS", "Focused", "BOON", 3, 1)
+defineMeleeCard(hit.groin, "Can see target", "HIT", "Focused", "BOON", 3, 1)
+defineMeleeCard(hit.lhand, "Can see target", "HIT", "Arm Wounded", "BANE", 3, 1)
 #endregion
 
 #region //21-30 Universal
-defineMeleeCard(13, "Can see target", "HIT", "Bold", "BOON", 3, 1)
-defineMeleeCard(13, "Nauseus", "MISS and BANE", " ", " ", 3, 1)
-defineMeleeCard(12, "Dizzy", "MISS", "Target has Adept Coordination", "BANE", 3, 1)
-defineMeleeCard(11, "Dizzy", "MISS", "Arm Wounded", "BANE", 3, 1)
-defineMeleeCard(11, "Hand Wounded", "MISS", "Target Minor Concealed", "BANE", 2, 0)
-defineMeleeCard(11, "Arm Wounded", "MISS", "Bold", "BOON", 2, 0)
-defineMeleeCard(10, "Arm Wounded", "MISS", "Minor Distraction", "BANE", 2, 0)
-defineMeleeCard(10, "Minor Distraction", "MISS", "Novice Coordination", "BOON", 3, 1)
-defineMeleeCard(8, "Major Distraction", "MISS", "Bold", "BOON", 3, 1)
-defineMeleeCard(6, "Major Distraction", "MISS", "Bold", "BOON", 3, 1)
+defineMeleeCard(hit.lforarm, "Can see target", "HIT", "Bold", "BOON", 3, 1)
+defineMeleeCard(hit.lforarm, "Nauseus", "MISS and BANE", " ", " ", 3, 1)
+defineMeleeCard(hit.lelbow, "Dizzy", "MISS", "Target has Adept Coordination", "BANE", 3, 1)
+defineMeleeCard(hit.luprarm, "Dizzy", "MISS", "Arm Wounded", "BANE", 3, 1)
+defineMeleeCard(hit.luprarm, "Hand Wounded", "MISS", "Target Minor Concealed", "BANE", 2, 0)
+defineMeleeCard(hit.luprarm, "Arm Wounded", "MISS", "Bold", "BOON", 2, 0)
+defineMeleeCard(hit.lshldr, "Arm Wounded", "MISS", "Minor Distraction", "BANE", 2, 0)
+defineMeleeCard(hit.lshldr, "Minor Distraction", "MISS", "Novice Coordination", "BOON", 3, 1)
+defineMeleeCard(hit.rforarm, "Major Distraction", "MISS", "Bold", "BOON", 3, 1)
+defineMeleeCard(hit.ruprarm, "Major Distraction", "MISS", "Bold", "BOON", 3, 1)
 #endregion
 
 #region //31-40 Universal
-defineMeleeCard(5, "Major Distraction", "MISS and BANE", "", "", 3, 1)
-defineMeleeCard(28, "Major Distraction", "MISS and BANE", " ", " ", 2, 1)
-defineMeleeCard(27, "Target has Minor Distraction", "HIT", "Target has Minor Distraction", "BOON", 2, 0)
-defineMeleeCard(26, "Target has Major Distraction", "HIT", "First attack this phase", "BOON", 2, 0)
-defineMeleeCard(26, "Bloodthirsty", "HIT", "Target has Novice Coordination", "BANE", 3, 0)
-defineMeleeCard(26, "Bloodthirsty", "HIT", "Target has Novice Melee", "BANE", 2, 0)
-defineMeleeCard(25, "Bloodthirsty", "HIT", "Major Distraction", "BANE", 2, 0)
-defineMeleeCard(25, "Focused", "HIT", "Master Melee", "BOON", 3, 0)
-defineMeleeCard(21, "Focused", "HIT", "Adept Melee", "BOON", 2, 0)
-defineMeleeCard(21, "Shaken", "MISS", "Target has Expert Melee", "BANE", 3, 0)
+defineMeleeCard(hit.rshldr, "Major Distraction", "MISS and BANE", "", "", 3, 1)
+defineMeleeCard(hit.lshin, "Major Distraction", "MISS and BANE", " ", " ", 2, 1)
+defineMeleeCard(hit.lknee, "Target has Minor Distraction", "HIT", "Target has Minor Distraction", "BOON", 2, 0)
+defineMeleeCard(hit.lthigh, "Target has Major Distraction", "HIT", "First attack this phase", "BOON", 2, 0)
+defineMeleeCard(hit.lthigh, "Bloodthirsty", "HIT", "Target has Novice Coordination", "BANE", 3, 0)
+defineMeleeCard(hit.lthigh, "Bloodthirsty", "HIT", "Target has Novice Melee", "BANE", 2, 0)
+defineMeleeCard(hit.lhip, "Bloodthirsty", "HIT", "Major Distraction", "BANE", 2, 0)
+defineMeleeCard(hit.lhip, "Focused", "HIT", "Master Melee", "BOON", 3, 0)
+defineMeleeCard(hit.rthigh, "Focused", "HIT", "Adept Melee", "BOON", 2, 0)
+defineMeleeCard(hit.rhip, "Shaken", "MISS", "Target has Expert Melee", "BANE", 3, 0)
 #endregion
 
-#region //41-50 Size Specials (Assign to each wep type 3 of these?)
-defineMeleeCard(4, "Grappling target", "HIT", "Stressed", "BANE", 2, 0) //Small
-defineMeleeCard(31, "Grappling target", "HIT", "Stressed", "BANE", 2, 0)
-defineMeleeCard(13, "Target is armed", "MISS", "Grappling target", "BOON", 2, 0)
-defineMeleeCard(12, "Target has height advantage", "MISS", "Target is unarmed", "BOON", 2, 1)
-defineMeleeCard(11, "Target has height advantage", "MISS", "Grappling target", "BOON", 3, 1)
-defineMeleeCard(1, "Target has height advantage", "MISS", "Attacking with Offhand", "BANE", 2, 1) //Medium
-defineMeleeCard(15, "Height Advantage", "HIT", "Stessed", "BANE", 2, 0)
-defineMeleeCard(11, "Height Advantage", "HIT", "Attacking with Offhand", "BANE", 2, 0)
-defineMeleeCard(10, "Attacking with Main Hand", "HIT", "Height Advantage", "BOON", 3, 0)
-defineMeleeCard(26, "Attacking with Main Hand", "HIT", "Stressed", "BANE", 2, 0)
-defineMeleeCard(0, "Grappling", "MISS", "Weapon Obstructed", "BANE", 2, 1) //Large
-defineMeleeCard(6, "Grappling", "MISS", "Weapon Obstructed", "BANE", 3, 1)
-defineMeleeCard(5, "Grappling", "MISS", "Weapon Obstructed", "BANE", 1, 1)
-defineMeleeCard(23, "Weapon Obstructed", "MISS", "Stressed", "BANE", 3, 1)
-defineMeleeCard(22, "Weapon Obstructed", "MISS", "Stressed", "BANE", 2, 1)
+#region //41-50 Size Specials
+defineMeleeCard(hit.neck, "Grappling target", "HIT", "Stressed", "BANE", 2, 0) //Small
+defineMeleeCard(hit.lvitals, "Grappling target", "HIT", "Stressed", "BANE", 2, 0)
+defineMeleeCard(hit.lforarm, "Target is armed", "MISS", "Grappling target", "BOON", 2, 0)
+defineMeleeCard(hit.lhand, "Target has height advantage", "MISS", "Target is unarmed", "BOON", 2, 1)
+defineMeleeCard(hit.luprarm, "Target has height advantage", "MISS", "Grappling target", "BOON", 3, 1)
+defineMeleeCard(hit.face, "Target has height advantage", "MISS", "Attacking with Offhand", "BANE", 2, 1) //Medium
+defineMeleeCard(hit.cchest, "Height Advantage", "HIT", "Stessed", "BANE", 2, 0)
+defineMeleeCard(hit.luprarm, "Height Advantage", "HIT", "Attacking with Offhand", "BANE", 2, 0)
+defineMeleeCard(hit.lshldr, "Attacking with Main Hand", "HIT", "Height Advantage", "BOON", 3, 0)
+defineMeleeCard(hit.lthigh, "Attacking with Main Hand", "HIT", "Stressed", "BANE", 2, 0)
+defineMeleeCard(hit.skull, "Grappling", "MISS", "Weapon Obstructed", "BANE", 2, 1) //Large
+defineMeleeCard(hit.ruprarm, "Grappling", "MISS", "Weapon Obstructed", "BANE", 3, 1)
+defineMeleeCard(hit.rshldr, "Grappling", "MISS", "Weapon Obstructed", "BANE", 1, 1)
+defineMeleeCard(hit.rshin, "Weapon Obstructed", "MISS", "Stressed", "BANE", 3, 1)
+defineMeleeCard(hit.rknee, "Weapon Obstructed", "MISS", "Stressed", "BANE", 2, 1)
 #endregion
 
 #region //56-75 Weapon Specials
-defineMeleeCard(4, "Adept Coordination", "HIT", "Focused", "BOON", 2, 0) //Sword
-defineMeleeCard(13, "Master Melee", "HIT", "Good Grip on Weapon", "BOON", 3, 0) 
-defineMeleeCard(26, "Adept Melee", "HIT", "Novice Coordination", "BOON", 3, 1) 
-defineMeleeCard(0, "Bloodthirsty", "HIT", "Good Grip on Weapon", "BOON", 3, 0) //Axe
-defineMeleeCard(32, "Bold", "HIT", "First attack this phase", "BOON", 2, 1)
-defineMeleeCard(30, "Spend 2 Fatigue", "HIT", "Hand wounded", "BANE", 0, 0) //Hammer
-defineMeleeCard(10, "Spend 1 Fatigue", "HIT", "Focused", "BOON", 0, 0) 
-defineMeleeCard(3, "Spend 2 Fatigue", "HIT", "Bold", "BOON", 0, 0) 
-defineMeleeCard(3, "Spend 3 Fatigue", "HIT", "Higher Might than target", "BOON", 0, 0) //Mace
-defineMeleeCard(3, "Spend 1 Fatigue", "HIT", "Lower Might than target", "BANE", 0, 0)
-defineMeleeCard(29, "Bloodthirsty", "HIT", "Target has height advantage", "BANE", 2, 0)
-defineMeleeCard(0, "Focused", "HIT", "Steady Footing", "BOON", 3, 0) //Spear
-defineMeleeCard(30, "Can see target", "HIT", "Dizzy", "BANE", 2, 1) 
-defineMeleeCard(18, "Can see target", "HIT", "Steady Footing", "BOON", 3, 1)
-defineMeleeCard(26, "Steady Footing", "HIT", "Target Minor Concealed", "BANE", 2, 1)
-defineMeleeCard(4, "Bold", "HIT", "Arm wounded", "BANE", 2, 0) //Swrd+Axe
-defineMeleeCard(1, "Focused", "HIT", "Bold", "BOON", 2, 0) //Spear+Swrd
-defineMeleeCard(25, "Bloodthirsty", "HIT", "First attack this phase", "BOON", 3, 0) //Hammer+Axe
-defineMeleeCard(10, "Spend 1 fatigue", "HIT", "Bold", "BOON", 0, 0) //Mace+Axe
-defineMeleeCard(0, "First attack this phase", "HIT", "Arm wounded", "BANE", 3, 1) //Hammer+Mace
+defineMeleeCard(hit.neck, "Adept Coordination", "HIT", "Focused", "BOON", 2, 0) //Sword
+defineMeleeCard(hit.lthigh, "Master Melee", "HIT", "Good Grip on Weapon", "BOON", 3, 0) 
+defineMeleeCard(hit.lhand, "Adept Melee", "HIT", "Novice Coordination", "BOON", 3, 1) 
+defineMeleeCard(hit.skull, "Bloodthirsty", "HIT", "Good Grip on Weapon", "BOON", 3, 0) //Axe
+defineMeleeCard(hit.abdomen, "Bold", "HIT", "First attack this phase", "BOON", 2, 1)
+defineMeleeCard(hit.lshldr, "Spend 2 Fatigue", "HIT", "Hand wounded", "BANE", 0, 0) //Hammer
+defineMeleeCard(hit.rvitals, "Spend 1 Fatigue", "HIT", "Focused", "BOON", 0, 0) 
+defineMeleeCard(hit.jaw, "Spend 2 Fatigue", "HIT", "Bold", "BOON", 0, 0) 
+defineMeleeCard(hit.jaw, "Spend 3 Fatigue", "HIT", "Higher Might than target", "BOON", 0, 0) //Mace
+defineMeleeCard(hit.jaw, "Spend 1 Fatigue", "HIT", "Lower Might than target", "BANE", 0, 0)
+defineMeleeCard(hit.lknee, "Bloodthirsty", "HIT", "Target has height advantage", "BANE", 2, 0)
+defineMeleeCard(hit.neck, "Focused", "HIT", "Steady Footing", "BOON", 3, 0) //Spear
+defineMeleeCard(hit.rvitals, "Can see target", "HIT", "Dizzy", "BANE", 2, 1) 
+defineMeleeCard(hit.lvitals, "Can see target", "HIT", "Steady Footing", "BOON", 3, 1)
+defineMeleeCard(hit.stomach, "Steady Footing", "HIT", "Target Minor Concealed", "BANE", 2, 1)
+defineMeleeCard(hit.neck, "Bold", "HIT", "Arm wounded", "BANE", 2, 0) //Swrd+Axe
+defineMeleeCard(hit.eyes, "Focused", "HIT", "Bold", "BOON", 2, 0) //Spear+Swrd
+defineMeleeCard(hit.lhip, "Bloodthirsty", "HIT", "First attack this phase", "BOON", 3, 0) //Hammer+Axe
+defineMeleeCard(hit.lshldr, "Spend 1 fatigue", "HIT", "Bold", "BOON", 0, 0) //Mace+Axe
+defineMeleeCard(hit.skull, "First attack this phase", "HIT", "Arm wounded", "BANE", 3, 1) //Hammer+Mace
 #endregion
 
 #region //Sword Damage
 dmg = weapon.sword
 arm = armour.meat
-defineDamage(1,4,3,10,6,18)
+defineDamage(1,3,3,9,7,17) //12
 arm = armour.bone
-defineDamage(3,12,7,19,14,26)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.cloth
-defineDamage(2,10,6,17,12,24)
+defineDamage(2,8,3,15,8,28) //6
 arm = armour.mail
-defineDamage(3,13,8,20,15,27)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.plate
-defineDamage(5,15,10,22,18,30)
+defineDamage(6,12,7,19,17,29) //1
 arm = armour.wood
-defineDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.stone
-defineDamage(6,16,12,24,22,30)
+defineDamage(8,16,17,24,25,30) //0
 #endregion 
 
 #region //Axe Damage
 dmg = weapon.axe
 arm = armour.meat
-defineDamage(1,7,4,14,9,21)
+defineDamage(1,6,4,11,8,22) //9
 arm = armour.bone
-defineDamage(3,11,6,18,13,25)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.cloth
-defineDamage(2,9,5,16,11,23)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.mail
-defineDamage(3,12,7,19,14,26)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.plate
-defineDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.wood
-defineDamage(3,11,6,18,13,25)
+defineDamage(3,8,4,15,9,29) //5
 arm = armour.stone
-defineDamage(5,15,10,22,18,30)
+defineDamage(6,12,7,19,17,29) //1
 #endregion
 
 #region //Spear Damage
 dmg = weapon.spear
 arm = armour.meat
-defineDamage(1,7,3,12,12,21)
+defineDamage(1,6,4,11,8,22) //9
 arm = armour.bone
-defineDamage(3,10,8,20,18,27)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.cloth
-defineDamage(3,8,6,18,16,25)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.mail
-defineDamage(2,7,4,16,14,23)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.plate
-defineDamage(3,13,6,18,19,27)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.wood
-defineDamage(3,15,10,22,20,30)
+defineDamage(6,12,7,19,17,29) //1
 arm = armour.stone
-defineDamage(9,16,12,21,22,30)
+defineDamage(8,16,17,24,25,30) //0
 #endregion 
 
 #region //Hammer Damage
 dmg = weapon.hammer
 arm = armour.meat
-defineDamage(2,9,5,16,9,25)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.bone
-defineDamage(3,11,6,18,10,28)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.cloth
-defineDamage(4,11,7,18,11,24)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.mail
-defineDamage(3,9,8,16,10,30)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.plate
-defineDamage(3,10,7,19,12,30)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.wood
-defineDamage(5,12,10,22,21,30)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.stone
-defineDamage(5,15,10,22,18,30)
+defineDamage(4,10,5,17,13,29) //3
 #endregion 
 
 #region //Mace Damage
 dmg = weapon.mace
 arm = armour.meat
-defineDamage(2,8,5,15,10,22)
+defineDamage(1,7,4,12,8,24) //8
 arm = armour.bone
-defineDamage(2,9,5,16,11,23)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.cloth
-defineDamage(3,12,7,19,14,26)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.mail
-defineDamage(3,11,6,18,13,25)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.plate
-defineDamage(5,15,10,22,18,30)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.wood
-defineDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.stone
-defineDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 #endregion 

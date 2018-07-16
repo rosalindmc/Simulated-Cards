@@ -95,107 +95,107 @@ defineRangedCard(hit.groin, "Master Ranged", "HIT", "Stressed", "BANE", 0, 0)
 #region //Rending Damage
 dmg = weapon.rending
 arm = armour.meat
-defineRangedDamage(1,8,2,13,5,20)
+defineDamage(1,3,3,9,7,17) //12
 arm = armour.bone
-defineRangedDamage(2,13,4,18,6,24)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.cloth
-defineRangedDamage(3,11,6,18,7,26)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.mail
-defineRangedDamage(3,13,8,20,15,27)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.plate
-defineRangedDamage(4,15,10,22,18,30)
+defineDamage(6,12,7,19,17,29) //1
 arm = armour.wood
-defineRangedDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.stone
-defineRangedDamage(6,16,12,24,22,30)
+defineDamage(8,16,17,24,25,30) //0
 #endregion 
 
 #region //Piercing Damage
 dmg = weapon.ap
 arm = armour.meat
-defineRangedDamage(2,12,4,16,5,22)
+defineDamage(1,7,4,12,8,24) //8
 arm = armour.bone
-defineRangedDamage(3,15,4,20,6,26)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.cloth
-defineRangedDamage(3,16,6,22,10,30)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.mail
-defineRangedDamage(2,14,4,17,5,24)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.plate
-defineRangedDamage(3,20,7,25,12,30)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.wood
-defineRangedDamage(4,16,10,22,18,30)
+defineDamage(6,12,7,19,17,29) //1
 arm = armour.stone
-defineRangedDamage(5,18,10,24,18,30)
+defineDamage(6,12,7,19,17,29) //1
 #endregion 
 
 #region //Fire Damage
 dmg = weapon.flame
 arm = armour.meat
-defineRangedDamage(2,9,5,16,11,23)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.bone
-defineRangedDamage(3,12,7,19,14,26)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.cloth
-defineRangedDamage(1,7,4,14,9,21)
+defineDamage(1,6,4,11,8,22) //9
 arm = armour.mail
-defineRangedDamage(3,13,8,20,15,27)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.plate
-defineRangedDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.wood
-defineRangedDamage(1,7,4,14,9,21)
+defineDamage(1,6,4,11,8,22) //9
 arm = armour.stone
-defineRangedDamage(5,15,10,22,18,30)
+defineDamage(6,12,7,19,17,29) //1
 #endregion 
 
 #region //Cold Damage
 dmg = weapon.frost
 arm = armour.meat
-defineRangedDamage(1,6,4,13,8,20)
+defineRangedDamage(1,5,3,11,8,20) //10
 arm = armour.bone
-defineRangedDamage(3,13,8,20,15,27)
+defineDamage(4,10,5,17,13,29) //3
 arm = armour.cloth
-defineRangedDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.mail
-defineRangedDamage(3,11,6,18,13,25)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.plate
-defineRangedDamage(2,13,6,20,12,28)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.wood
-defineRangedDamage(3,12,7,19,14,26)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.stone
-defineRangedDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 #endregion 
 
 #region //Lightning Damage
 dmg = weapon.lightning
 arm = armour.meat
-defineRangedDamage(2,10,6,17,12,24)
+defineDamage(2,8,3,15,8,28) //6
 arm = armour.bone
-defineRangedDamage(4,14,9,21,16,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.cloth
-defineRangedDamage(3,12,7,19,14,26)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.mail
-defineRangedDamage(1,11,5,18,11,25)
+defineDamage(2,8,3,15,8,28) //6
 arm = armour.plate
-defineRangedDamage(2,9,5,16,11,23)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.wood
-defineRangedDamage(3,12,7,19,14,26)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.stone
-defineRangedDamage(6,16,12,24,22,30)
+defineDamage(8,16,17,24,25,30) //0
 #endregion 
 
 #region //Corrosion Damage
 dmg = weapon.corrosion
 arm = armour.meat
-defineRangedDamage(2,7,5,16,13,23)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.bone
-defineRangedDamage(3,9,6,18,15,25)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.cloth
-defineRangedDamage(4,12,9,21,18,28)
+defineDamage(5,11,6,18,14,30) //2
 arm = armour.mail
-defineRangedDamage(1,8,4,17,12,24)
+defineDamage(2,7,4,13,8,26) //7
 arm = armour.plate
-defineRangedDamage(2,11,6,20,14,28)
+defineDamage(3,9,5,15,11,29) //4
 arm = armour.wood
-defineRangedDamage(3,9,6,18,15,25)
+defineDamage(3,8,4,15,10,28) //5
 arm = armour.stone
-defineRangedDamage(3,11,8,20,17,27)
+defineDamage(4,10,5,17,13,29) //3
 #endregion 

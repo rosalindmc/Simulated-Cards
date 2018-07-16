@@ -38,6 +38,19 @@ with(obj_rangedCard)
 		damage[other.arm,0] = floor(other.d[0]+((other.d[1]-other.d[0])*(other.iii/other.iv)))
 		damage[other.arm,1] = floor(other.d[2]+((other.d[3]-other.d[2])*(other.iii/other.iv)))
 		damage[other.arm,2] = floor(other.d[4]+((other.d[5]-other.d[4])*(other.iii/other.iv)))
+		
+		if damage[other.arm,0] > 30
+		{
+			damage[other.arm,0] = 99
+		}
+		if damage[other.arm,1] > 30
+		{
+			damage[other.arm,1] = 99
+		}
+		if damage[other.arm,2] > 30
+		{
+			damage[other.arm,2] = 99
+		}
 		other.iii ++
 	}
 }
